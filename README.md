@@ -62,7 +62,7 @@ Agradezco a Frontend Mentor por proporcionar desafíos inspiradores y a la comun
 ## Recursos Útiles
 
 - [Documentación de Google Fonts](https://developers.google.com/fonts/docs/getting_started)
-- [Herramienta ColorZilla - Eyedropper](https://www.colorzilla.com/eyedropper/)
+- [Herramienta imagecolorpicker](https://imagecolorpicker.com/es)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Diseño Responsivo](https://www.w3schools.com/html/html_responsive.asp)
