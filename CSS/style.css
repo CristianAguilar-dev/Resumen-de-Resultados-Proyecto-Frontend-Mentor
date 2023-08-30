@@ -1,0 +1,264 @@
+/* eusable styles variables */
+:root {
+    --section-presentation-gradient: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    --presentation-gradient-round-container: linear-gradient(to bottom, hsla(256, 72%, 36%, 0.8), hsla(241, 72%, 46%, 0));
+    --summary-container-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1), 0px 6px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* universal selector styles */
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* relative measures 10 px equals 1rem */
+html {
+    font-size: 62.5%;
+}
+
+/* main container */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* start container first section */
+/* first section container  (presentation) */
+.presentation-container {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    background: var(--section-presentation-gradient);
+    text-align: center;
+    z-index: 1;
+}
+
+/* first section container title */
+.presentation-container h1 {
+    font-size: 1.8rem;
+    padding-top: 25px;
+    margin-bottom: 22px;
+    color: #c9bbff;
+    font-weight: 800;
+}
+
+/* round container styles */
+.round-container {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    
+    /* gradient with 80% transparency */
+    background: var(--presentation-gradient-round-container);
+    border-radius: 48%;
+    padding: 20px 20px 0 20px;
+}
+
+/* round container number styles */
+.round-container-number {
+    font-size: 4.2rem;
+    color: #fdfdff;
+    margin: 5px auto 0;
+    font-weight: 700;
+}
+
+/* styles description round container */
+.description-round-container {
+    color: #8577ff;
+    margin-top: -5px;
+    font-size: 12px;
+}
+
+/* container test styles */
+.container-test {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* container test styles title */
+.test-container-title {
+    color: #f3f1ff;
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+/* container test styles description */
+.description-test-container {
+    color: #a8a7ff;
+    padding:  0 40px 38px;
+    font-size: 1.2rem;
+}
+
+/* start session number 2 (summary) */
+/* summary-container-styles */
+.summary-container {
+    width: 262px;
+    height: auto;
+    text-align: center;
+    padding: 28px 28px 0 40px;
+    margin-left: -12px;
+    box-shadow: var(--summary-container-shadow);
+    border-bottom-right-radius: 20px;
+}
+
+/* container styles section title summary */
+.summary-container-title {
+    color: #323a4f;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* general styles for articles containers of the summary section */
+.summary-general-styles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 8px; 
+    margin-bottom: 8px; 
+    border: 2px solid #fff6f5;
+}
+
+/* background color of the article containers of the summary section */
+.summary-container-reaction {
+    background-color: #fff6f5;
+}
+.summary-container-memory {
+    background-color: #fffbf2;
+}
+.summary-container-verbal {
+    background-color: #f2fafa;
+}
+.summary-container-visual {
+    background-color: #f3f3fc;
+}
+
+/* general styles for icon and description of the summary section */
+.container-abstract-general-styles-icon-description {
+    display: inline-flex;
+}
+
+.general-styles-summary-icon {
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+}
+.summary-general-styles-description {
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-left: 8px;
+}
+
+/* color for item container descriptions summary section */
+.summary-reaction-description {
+    color: #db6566;
+}
+.summary-memory-description {
+    color: #e4b85d;
+}
+.summary-verbal-description {
+    color: #52bfa4;
+}
+.summary-visual-description {
+    color: #313aba;
+}
+
+/* general styles for percentage description */
+.container-summary-general-styles-number-percentage {
+    display: inline-flex;
+}
+
+/* general styles for summary section number */
+.summary-general-styles-number {
+    color: #2b2a37;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-right: 6px;
+    
+}
+.summary-general-styles-percentage {
+    color: #a7a0a7;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* styles for the button of the summary section */
+.summary-container-button button {
+    padding: 10px 12px ;
+    text-align: center;
+    background-color: #303b59;
+    border: none;
+    border-radius: 28px;
+    width: 100%;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.summary-container-button button:hover {
+    background: var(--section-presentation-gradient);
+}
+
+/* styles for the attribute container */
+.summary-container-attribution {
+    width: 100%;
+    line-height: 10px;
+    margin: 8px 0 10px 0;
+    color: #a7a0a7;
+    overflow: hidden; 
+}
+
+.summary-container-attribution a {
+    color: #a7a0a7;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* style breakpoint for screens smaller than 425px */
+@media screen and (max-width: 425px) {
+    .container {
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .presentation-container h1 {
+        margin-top: 40px;
+    }
+    .summary-container {
+        width: 380px; 
+    }
+    .presentation-container {
+        width: 375px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .summary-general-styles {
+        margin-bottom: 15px;
+    }
+    .description-test-container {
+        margin: 0 20px;
+        font-size: 1.4rem;
+    }
+    .general-styles-summary-icon {
+        width: 18px;
+        height: 18px;
+    }
+    .summary-general-styles-description {
+        font-size: 1.4rem;
+    }
+    .summary-general-styles-number,
+    .summary-general-styles-percentage {
+        font-size: 1.5rem;
+    }
+    .summary-container-button button {
+        padding: 15px;
+    }
+    .summary-container-attribution {
+        margin: 20px 0;
+    }
+}
